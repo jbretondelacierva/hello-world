@@ -1,49 +1,52 @@
-git clone
-git status
-PS C:\Users\jbret\IdeaProjects\hello-world> git status
-On branch main
-Your branch is up to date with 'origin/main'.
+Anotaciones:
+    Me he tenido que crear un token para el comandos como el git push
 
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        new file:   explicaciones.txt
+git clone:    se usa para copiar un repositorio Git existente en un nuevo directorio local
+git status:    muestra el estado del directorio de trabajo y del área del entorno de ensayo
+        PS C:\Users\jbret\IdeaProjects\hello-world> git status
+        On branch main
+        Your branch is up to date with 'origin/main'.
 
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   explicaciones.txt
+        Changes to be committed:
+          (use "git restore --staged <file>..." to unstage)
+                new file:   explicaciones.txt
 
-git add .
-warning: LF will be replaced by CRLF in explicaciones.txt.
-The file will have its original line endings in your working directory
+        Changes not staged for commit:
+          (use "git add <file>..." to update what will be committed)
+          (use "git restore <file>..." to discard changes in working directory)
+                modified:   explicaciones.txt
 
-git commit
+git add .:  selecciona ese archivo y lo mueve al área de preparación, marcándolo para incluirlo en la próxima confirmación. Puede seleccionar todos los archivos, un directorio, archivos específicos o incluso partes específicas de un archivo para preparar y confirmar.
+        warning: LF will be replaced by CRLF in explicaciones.txt.
+        The file will have its original line endings in your working directory
 
- #explaciones# with '#' will be ignored, and an empty message aborts the commit.
-#
-# On branch main
-# Your branch is up to date with 'origin/main'.
-#
-# Changes to be committed:
-#       new file:   explicaciones.txt
-#
-# Changes not staged for commit:
-#       modified:   explicaciones.txt
+git commit -m "":Cuando hacemos un commit, estamos congelando el estado de todos los ficheros y subdirectorios, y guardando la instantánea en un histórico.
 
-git push
-PS C:\Users\jbret\IdeaProjects\hello-world> git push
-Enumerating objects: 4, done.
-Counting objects: 100% (4/4), done.
-Delta compression using up to 8 threads
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 697 bytes | 232.00 KiB/s, done.
-Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To https://github.com/jbretondelacierva/hello-world
-   f99ca54..428f762  main -> main
+         #explaciones# with '#' will be ignored, and an empty message aborts the commit.
+        #
+        # On branch main
+        # Your branch is up to date with 'origin/main'.
+        #
+        # Changes to be committed:
+        #       new file:   explicaciones.txt
+        #
+        # Changes not staged for commit:
+        #       modified:   explicaciones.txt
+
+git push: El comando git push se usa para cargar contenido del repositorio local a un repositorio remoto
+        PS C:\Users\jbret\IdeaProjects\hello-world> git push
+        Enumerating objects: 4, done.
+        Counting objects: 100% (4/4), done.
+        Delta compression using up to 8 threads
+        Compressing objects: 100% (3/3), done.
+        Writing objects: 100% (3/3), 697 bytes | 232.00 KiB/s, done.
+        Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+        remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+        To https://github.com/jbretondelacierva/hello-world
+           f99ca54..428f762  main -> main
 
 
-git checkout
-PS C:\Users\jbret\IdeaProjects\hello-world> git checkout
-M       explicaciones.txt
-Your branch is up to date with 'origin/main'.
+git checkout: cambia entre ramas o restaura los archivos del árbol de trabajo
+        PS C:\Users\jbret\IdeaProjects\hello-world> git checkout
+        M       explicaciones.txt
+        Your branch is up to date with 'origin/main'.
